@@ -1,9 +1,21 @@
 "use strict";
 
-let obj = [];
+// Home Work #1
 
-obj[0] = prompt("what is your name?", "");
-obj[1] = prompt("what is your surname?", "");
-obj[2] = prompt("how old are you?", "");
+const numberOfFilms = +prompt("How many films do you already saw?", "");
 
-document.write(obj);
+    let a = prompt("One of the last watched movies?", ""),
+        b = prompt("How much will you rate the film?", ""),
+        c = prompt("How much will you rate the film?", ""),
+        d = prompt("How much will you rate the film?", "");
+
+let personalMovieDB = {
+    'count': numberOfFilms,
+    'movie': {},
+    'actors': {},
+    'genres': [],
+    'privat': false
+};
+personalMovieDB.movie[a] = b;
+personalMovieDB.movie[c] = d;
+console.log(personalMovieDB);
